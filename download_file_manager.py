@@ -44,7 +44,7 @@ class DownloadManager(Daemon):
                                 try:
                                     shutil.move(entry.path, f"{target_dir}/{entry.name}")
                                     with open(f"{PATH}/{LOGFILE}", "a") as f:
-                                        f.write(f"{counter} - {entry.name} -  /{folder}/  -  {datetime.datetime.now()} \n")
+                                        f.write(f"{counter} - {entry.name} -  /{folder}/  -  {str(datetime.datetime.now())[:22]} \n")
                                 except Exception:
                                     pass
             time.sleep(3 * MIN)

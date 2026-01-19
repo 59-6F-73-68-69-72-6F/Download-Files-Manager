@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Download file manager
+Exec=nice -n 18 YOUR_PATH/download_file_manager.py start
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Comment=Laugh the script at the beginning of starting session
